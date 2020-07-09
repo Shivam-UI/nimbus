@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Nimbus</string>
+    <string name="uname">User Name</string>
+    <string name="upass">Password</string>
+    <string name="btnlogin">LOGIN</string>
+    <string name="btnRegister">REGISTER</string>
+    <string name="txt_or">OR</string>
+    <string name="txt_register">Click Here For Register</string>
+    <string name="edt_referral">Referral ID</string>
+    <string name="edt_sponsor">Sponsor Name</string>
+    <string name="edt_position">Position</string>
+    <string name="spinner_title">Select Position</string>
+    <string name="edtCountrycode">+91</string>
+    <string name="edtCountryName">Select Position</string>
+    <string name="edt_fullName">Enter Full Name</string>
+    <string name="edtNumber">Enter Mobile Number</string>
+    <string name="edtEmail">Enter Email</string>
+    <string name="edtPassword">Enter Password</string>
+    <string name="edtRePassword">Re-Enter Password</string>
+    <string name="chkTermCondition">Term &amp; Condition</string>
+    <string name="tvUser">Neo Nimbus</string>
+    <string name="tvUserEmail">support@neonimbus.com</string>
+
+</resources>

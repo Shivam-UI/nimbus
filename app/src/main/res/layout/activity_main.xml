@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.MainActivity">
+
+        <include
+            android:id="@+id/viewToolbar"
+            layout="@layout/home_toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvdashboraditemlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginBottom="?attr/actionBarSize"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btmNavHomeScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@color/edtColor"
+            app:itemTextAppearanceActive="@style/BottomNavigationView"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+            app:itemTextColor="@color/edtColor"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/btm_menu" />
+
+    </RelativeLayout>
+
+
+    <com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navigationDrawerBackgroundColor="#288153"
+        app:appbarTitleTextColor="@android:color/white"
+        app:HamMenuIconTintColor="@android:color/white"
+        app:appbarColor="@color/edtColor"
+        app:primaryMenuItemTextColor="@android:color/white"
+        app:secondaryMenuItemTextColor="@android:color/white"
+        app:appbarTitleTextSize="7sp"
+        app:primaryMenuItemTextSize="7sp"
+        app:secondaryMenuItemTextSize="7sp"
+        android:id="@+id/navigationDrawer">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:background="@color/edtColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer>
+
+    <ExpandableListView
+        android:id="@+id/expanded_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:visibility="gone" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

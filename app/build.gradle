@@ -39,5 +39,5 @@ dependencies {
     implementation 'com.android.volley:volley:1.1.0'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     // menu dynamic
-    implementation 'com.github.shrikanth7698:Custom-Navigation-Drawer:v0.0.1'
+    implementation 'nl.psdcompany:duo-navigation-drawer:3.0.0'
 }

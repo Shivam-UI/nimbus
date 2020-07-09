@@ -4,8 +4,15 @@
     <color name="colorPrimaryDark">#e7e8ef</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="txtColor">#959595</color>
+    <color name="md_grey_500">#959595</color>
     <color name="edtColor">#288153</color>
     <color name="MainBackground">#288153</color>
     <color name="white">#FFFFFF</color>
-    <color name="md_grey_500">#e7e8ef</color>
+    <color name="one">#7F8CED</color>
+    <color name="two">#69E4E4</color>
+    <color name="three">#FFC668</color>
+    <color name="four">#BFEFB8</color>
+    <color name="five">#FF8B9D</color>
+    <color name="six">#DB9AFF</color>
+    <color name="seven">#FF9352</color>
 </resources>

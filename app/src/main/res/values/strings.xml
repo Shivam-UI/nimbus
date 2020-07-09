@@ -20,5 +20,6 @@
     <string name="chkTermCondition">Term &amp; Condition</string>
     <string name="tvUser">Neo Nimbus</string>
     <string name="tvUserEmail">support@neonimbus.com</string>
+    <string name="hello_blank_fragment">Hey It\'s working</string>
 
 </resources>

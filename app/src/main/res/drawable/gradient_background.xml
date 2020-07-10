@@ -17,7 +17,7 @@
         android:startColor="#288153" />
     <stroke
         android:width="0dp"
-        android:color="#000000" />
+        android:color="#FFFFFF" />
 
 
 <!--    android:centerColor="#FFFFFF"-->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#e7e8ef</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="txtColor">#959595</color>
@@ -8,11 +8,12 @@
     <color name="edtColor">#288153</color>
     <color name="MainBackground">#288153</color>
     <color name="white">#FFFFFF</color>
-    <color name="one">#7F8CED</color>
-    <color name="two">#69E4E4</color>
-    <color name="three">#FFC668</color>
-    <color name="four">#BFEFB8</color>
-    <color name="five">#FF8B9D</color>
-    <color name="six">#DB9AFF</color>
-    <color name="seven">#FF9352</color>
+    <color name="white_light">#72FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="one">#f76663</color>
+    <color name="two">#7651f7</color>
+    <color name="three">#f78b5e</color>
+    <color name="four">#29bdf7</color>
+    <color name="five">#5762f7</color>
+    <color name="six">#91d343</color>
 </resources>

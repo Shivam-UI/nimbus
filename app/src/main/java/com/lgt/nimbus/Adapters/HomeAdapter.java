@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.lgt.nimbus.Model.DashItems;
@@ -36,7 +37,27 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ItemHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ItemHolder holder, int position) {
-        holder.ll_container.setBackgroundColor(mData.get(position).getColor());
+        //holder.iv_categoru_icon.setImageResource(mData.get(position).getColor());
+        holder.tv_category.setText(mData.get(position).getTitle());
+        holder.iv_categoru_icon.setVisibility(View.VISIBLE);
+        if (position==0){
+            holder.cv_itemContainer.setCardBackgroundColor(mContext.getResources().getColor(R.color.one));
+        }
+        if (position==1){
+            holder.cv_itemContainer.setCardBackgroundColor(mContext.getResources().getColor(R.color.two));
+        }
+        if (position==2){
+            holder.cv_itemContainer.setCardBackgroundColor(mContext.getResources().getColor(R.color.three));
+        }
+        if (position==3){
+            holder.cv_itemContainer.setCardBackgroundColor(mContext.getResources().getColor(R.color.four));
+        }
+        if (position==4){
+            holder.cv_itemContainer.setCardBackgroundColor(mContext.getResources().getColor(R.color.five));
+        }
+        if (position==5){
+            holder.cv_itemContainer.setCardBackgroundColor(mContext.getResources().getColor(R.color.six));
+        }
     }
 
     @Override
@@ -48,14 +69,14 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ItemHolder> {
         TextView tv_category, tv_scoreView, tv_extratext, textextratwo;
         ImageView iv_categoru_icon;
         LinearLayout ll_container;
+        CardView cv_itemContainer;
         public ItemHolder(@NonNull View itemView) {
             super(itemView);
             tv_category = itemView.findViewById(R.id.tv_category);
             tv_scoreView = itemView.findViewById(R.id.tv_scoreView);
-            tv_extratext = itemView.findViewById(R.id.tv_extratext);
-            textextratwo = itemView.findViewById(R.id.textextratwo);
             ll_container = itemView.findViewById(R.id.ll_container);
             iv_categoru_icon = itemView.findViewById(R.id.iv_categoru_icon);
+            cv_itemContainer = itemView.findViewById(R.id.cv_itemContainer);
         }
 
         void setDataToView(){

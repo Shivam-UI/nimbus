@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="176dp"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/navHeader"
-    android:gravity="bottom"
-    android:padding="16dp"
-    android:background="@drawable/mainbackground"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mainbackground">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/civProfile"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:tint="#ffffff"
-        android:src="@drawable/girl_avatar"/>
+        android:src="@drawable/girl_avatar"  />
 
     <TextView
         android:id="@+id/tvHeaderName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/civProfile"
         android:text="@string/tvUser"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/tvHeaderEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxLines="1"
+        android:layout_below="@id/tvHeaderName"
         android:ellipsize="end"
+        android:textColor="@color/white"
+        android:maxLines="1"
         android:text="@string/tvUserEmail" />
 
-</LinearLayout>
+</RelativeLayout>

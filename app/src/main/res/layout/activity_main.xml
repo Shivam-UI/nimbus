@@ -3,22 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigationDrawer"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/MainBackground"
-        android:orientation="vertical"
-        android:tag="@string/tag_menu"
-        app:footer="@layout/content"
-        app:header="@layout/content" />
+    android:layout_height="match_parent"
+    app:menu="@layout/content">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/dashroundcornors"
         android:orientation="vertical"
         android:tag="@string/tag_content">
 
@@ -26,35 +17,35 @@
             android:id="@+id/viewToolbar"
             layout="@layout/home_toolbar" />
 
-        <FrameLayout
-            android:id="@+id/container"
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/white" >
+            android:layout_height="240dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvDashboardItems"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDashboardItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/btmNavHomeScreen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:background="?android:attr/windowBackground"
-                android:nestedScrollingEnabled="false"
-                android:overScrollMode="never"
-                android:visibility="invisible"
-                app:itemBackground="@color/white"
-                app:itemIconTint="@color/edtColor"
-                app:itemTextAppearanceActive="@style/BottomNavigationView"
-                app:itemTextAppearanceInactive="@style/BottomNavigationView"
-                app:itemTextColor="@color/edtColor"
-                app:labelVisibilityMode="labeled"
-                app:menu="@menu/btm_menu" />
-        </FrameLayout>
-
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btmNavHomeScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@color/edtColor"
+            app:itemTextAppearanceActive="@style/BottomNavigationView"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+            app:itemTextColor="@color/edtColor"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/btm_menu" />
     </LinearLayout>
 
 </nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>

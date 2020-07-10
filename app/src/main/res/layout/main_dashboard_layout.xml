@@ -4,6 +4,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashroundcornors"
+        android:orientation="vertical"
+        android:tag="@string/tag_content">
 
+        <include
+            android:id="@+id/viewToolbar"
+            layout="@layout/home_toolbar" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Member Panel - NBID"
+            android:textColor="@color/MainBackground" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDashboardItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btmNavHomeScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@color/edtColor"
+            app:itemTextAppearanceActive="@style/BottomNavigationView"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+            app:itemTextColor="@color/edtColor"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/btm_menu" />
+    </LinearLayout>
 
 </RelativeLayout>

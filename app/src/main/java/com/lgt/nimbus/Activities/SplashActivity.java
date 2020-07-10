@@ -89,7 +89,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void foundValidUser() {
         if (isUserValid) {
-            startActivity(new Intent(SplashActivity.this, MainActivity.class));
+            startActivity(new Intent(SplashActivity.this, LoginActivity.class));
             finishAffinity();
         } else {
         }

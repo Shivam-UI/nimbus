@@ -4,48 +4,13 @@
     android:id="@+id/navigationDrawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="start"
+    app:content="@layout/content"
     app:menu="@layout/content">
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/fl_frameContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/dashroundcornors"
-        android:orientation="vertical"
-        android:tag="@string/tag_content">
-
-        <include
-            android:id="@+id/viewToolbar"
-            layout="@layout/home_toolbar" />
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginBottom="15dp"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvDashboardItems"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/btmNavHomeScreen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:background="?android:attr/windowBackground"
-            android:nestedScrollingEnabled="false"
-            android:overScrollMode="never"
-            android:visibility="gone"
-            app:itemBackground="@color/white"
-            app:itemIconTint="@color/edtColor"
-            app:itemTextAppearanceActive="@style/BottomNavigationView"
-            app:itemTextAppearanceInactive="@style/BottomNavigationView"
-            app:itemTextColor="@color/edtColor"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/btm_menu" />
-    </LinearLayout>
+        android:layout_height="match_parent"/>
 
 </nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>
